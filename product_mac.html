@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mac - Apple Style Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-100 text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white">
+
+    <!-- 1. Navigation Bar Apple -->
+    <header>
+        <nav
+            class="fixed top-0 left-0 w-full z-50 bg-zinc-100/40 dark:bg-zinc-900/20 backdrop-blur-md border-b border-zinc-300/50 dark:border-zinc-800/60 transition-colors">
+            <div
+                class="max-w-5xl mx-auto px-4 h-11 flex items-center justify-between text-xs text-zinc-600 dark:text-zinc-300">
+
+                <!-- Apple Logo -->
+                <a href="index.html" class="font-bold hover:text-black dark:hover:text-white transition">
+                    APPLE
+                </a>
+
+                <!-- Menu Links -->
+                <div class="hidden md:flex items-center space-x-8 tracking-tight font-normal">
+                    <a href="index.html" class="hover:text-black dark:hover:text-white transition">Store</a>
+                    <a href="product_mac.html" class="hover:text-black dark:hover:text-white transition">Mac</a>
+                    <a href="product_ipad.html" class="hover:text-black dark:hover:text-white transition">iPad</a>
+                    <a href="#" class="hover:text-black dark:hover:text-white transition">iPhone</a>
+                    <a href="#" class="hover:text-black dark:hover:text-white transition">Watch</a>
+                    <a href="#" class="hover:text-black dark:hover:text-white transition">AirPods</a>
+                    <a href="#" class="hover:text-black dark:hover:text-white transition">Support</a>
+                </div>
+
+                <!-- Icons -->
+                <div class="flex items-center space-x-6">
+                    <button aria-label="Search" class="hover:text-black dark:hover:text-white transition">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+                    <button aria-label="Cart" class="hover:text-black dark:hover:text-white transition">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-11">
+
+        <!-- 2. Chapter Nav (Thanh điều hướng danh mục dòng Mac dạng icon trượt) -->
+        <section class="bg-zinc-100 border-b border-zinc-200 py-6 overflow-x-auto">
+            <div class="max-w-5xl mx-auto px-4 flex items-center justify-between min-w-[700px] text-center">
+                <a href="#macbook-air" class="group space-y-2 flex flex-col items-center">
+                    <img src="data:image/webp;base64,UklGRoAdAABXRUJQVlA4IHQdAACQegCdASqhAeoAPp1KnkulpCMiptNaULATiWdu1UHUvwIH/Od8u/uVSvROjR38bP5/KF/X43XM19Wn826P/z/4eHhF65fN3RUvf/V+BfZN/qO9H8z/cPQO/IP41/ufO8+f7jDQv9P6BHs39x9YKa5/UaMPTzvNzxv+r5Y/sT2G/58TJdZkrrMlc3MdENA8D+Hgfw8D97DV8ikTn/FFCN2sosmStLmLBg/00Z9L5kEcd8BleatsTLRvpJeCP9qFX/Sxe6ZTPscK+35vYsAqei2QlsatGPvC6fVlxrcKUj/zavl6fxtxb4jmEKUG3EhTr9pLd/gHJOK1wQgR/8eBMqb+PxzTrcVdqo4GZNPiwGZw4DDdiqFL1cqOq2nOcyzTVpV+fiKxFAgp5KMAxi/6ElaOLCsKRoMwSUhF+IkT9Hip48cPbT1sm1aXjx2RJX7p6y6XLonUBoclYiB+TXQXnp4tf5ZpZ3fzCOXWmISluwS7wSkQOndx0Cx28OX2BK5CzhxY0jj0dSVBjsxDvgFTB2qNrYjTwTALAjakEOjlKbaDc2iGgKsPpMEq6DTyo5SLDTrj3ZgNBZeZZck/wL0pGjMxQC3mKnmy6+de6xGcn7vqeSpwwZhZddYLcCApRL725JvKCUd2TnsRGEpxsD0PNLHKwEB0dZd8MOUSkpP1tD9X7iX35K2qwif2vtXL67FzjP7H3ZxCRs1fToR/4Bqd/F4D3/8Ces/kTTZ7GcFdwa+so4/pQsE0YKfq5ITIbjJccor8eTFPJ4Lnt0sDZf1kLSLfo3CVaoX+59DeHIv/YJGe/4szuqToxhM4XIwIl01kVWGA3hkhYRSKbBn92f++WgVrxTCT8jOzrtf5TAE4NVTOfUAWX6II3KMar5d28hfbkuagM6F+SyE/3LP6Zz8N/AHlXOcpm4R8YMGeCNdnX2XUr78IyNn92Y1BQs5Wev/4z1rm/RpZtxnDCbY5Gv8fgg1XWzrCpx/pHJ+RxvvOYtoIn02UITXU/837tY6nr6HLZd0v+mrpDGBgCdB4L1oN9glb8TQehZN+ao+CfOSkKsH78o8l6CvKQD3n02NUFfH41+Z7P036GgKV3IBsb8bHxvxd//9UQn/7EVXE45Z056zglqlUj0btQ8ntYLAm2dSfOPv9/cRDMo9q6FAFS35pGy//eLvS7v/729b9HHfAZWztQ/4tRWE7FIWLN+Bao6LmBrXmV4e0ZuP7H5SUq50NAKdBMClc0Wlo4W8J/UUtlMfmWdOSONrXO989ak/HQThGj7ZGSjGSZb/G3vQaOq2qYOfGVmi0twS63IFH6hZeUAD+9/lwZumsA74afqObP29tTmTkizHApfeJF0ihFymr/DvcIzKaqoeYz/lZibtSxmMDyAiCFw6R3h9FZuoKxcHAOdYhKlc5020t9oO7ygBpxQzz2ze12Ry1TDreOetJWpYHGJE484QEzvVTjMU2BRWRpWg4M94orbo3L7e7PZAAFg5V75fUCc4H1aOwHmJ46P3LKP3GmhPMFLou8iyoJ6UTXwFhYrSzljzmXgLZH1l88PYCXCHUnMRoLpELxjgy0LuIv71DzYW7WO/909NZrlm+5g9ZAPEZW6UbpCwmRPsoq3DHXHZLT/C1sU08Br/XIjQXagKAQ5t1NlAekVAh11B2fA1cRxhfg4hiZ16TBhF2GnzeHaxBz1A1GBzsEFQrVo+PcD2zrXIMzfunBHNPKfnUdRMeEJGX+h98RRzLHLRDoRxxfEcm7kFapdaXetgdYMz7Zka8cc35QjImQwjR3kdYxtMAhhfw9Y8Sp5AUbJ8zzC+/wJgWNT5On5GouRnNu/KDY9r06AB1rFcw/PLn1DLOD7RE2l47Z0Smy3Y+6OfJFtNva7d97eeglW9/v8+VcJ/bDVNIgAPnZKjO0LuPlntI9B3VoEjU8EpqnuW0eJwYAGus9+xSm69tIGIrhGnQGlTpnpjFn+UU+m104FP22iqs4k2H6vjRw2s0ZPfavZmhlvm/lF+9nInJHrWfHNApGa9SHGY7PFNT1HbGwJEmGEto2dpTotlpj8StyJjDjnaDClGoP2YK6p8nW9jsuLCkVcbzMNK2nrZJksR4SuPl8o553ejUKQsBaMs+X2sVws/pOZOuGrG1gdSUW+jxSwn8j3lJ2/o1cfx3+Wh5OWfWccV3/TAGvvipW/R5hPMLnbaeUJ313cgsJyBjoe1oPEgOA+gYE1zW5NC+/eIvriRPACtCgv5aiYAFibRNqdtkkkaGkruJJUVKMZO4yDfm8YF6wLC7hNOsjWpGA14SoSrz4V3TwU4B3HHfNrg2mEtAkQxUD5PDOdCcP40uFW8RVYpJ3Jr0awtc2ugk9te3FFz4xO/96V+KswW5UV16PikWKoAZA8tRbdMetpocDyuQYZJaZTkQfl1+fBY1XB+Y7aynaPXvjsoAlvxVV92BdAmkuf2K4/f9f8FfZxl6ajwO8zRWm6Divbk1v/ZHcMvK9Oqz1p7YUrc/QflTJ00s14PO3Fqhui2uGumkjjvGqdmKI5RujyV8Jz5rpIPFeOHKRVRfrSWiZoyDszd9sFYTcyT9L3je3zI2DagqyJGewXBJU/3erZ8coVxucCl0fPiVLQDpIMUAajJLhfKBZeYE89tYX1sqXbZ1N8IC4AKAL5K7xfE5aApFuzWi/UG0HPxSnZ9zcUpSGRtBKKrm6iEErJh0L2m0An97XrNto1Yg/unpajqAlpYpJ9qN4toh0kE0/S7lA2ixG6gMquwGEuMuztmNMWpfBMquPtHMYCKG1AoTPuUi4MiulxeFotbzyIxnnzqtR3dfpt5PCB7UUUyXgpcj8RrVOxFSvCGAlX+umNYx2i6yQ7nzUzFM64w/ubEoeLyh0g4qjpZ3DgDGWnlDBnW5EU0zBM5yEFxaKeg9y/7fQTh9ffzxZYETiYwwZBxxwaA0Yqsp3p4AhXt7krlOn7/Cw2oOEADjVfxc4KINUwOFLgXTke5JPmCHPkxOv3QOHnv20OdpXs4S/9hL+8ctdt1eu5HOpJQwmxrDWjwUEvwvuqyXZqplq1UixDgb2hZThENeWD7u/K7x4i6hJ51Uvyy3XJ8o6zeJEEYsBtdfHR2opo3j5ProY4pNptZGJikyTAQcDdn+NpeCFvIpRTZY4SkmUlb6egSmo08C/55ZFpEmBz5wZinISNyj0b3On34zkY3m5Ntjy27CPv6cU78gbzUJmPYbTCygB76iSnX8588P+d0SX369+vtiCjKgCUPkQ3X/DmsQbEAHAht48QT7Ci3KWxT4lIh8xfipFwhCbco/WcladmjY1IZ35jfnC9LkX0PnGwD0ua/QDPbrVonzkWPxoV2JzKQM0O3Kx5XJxJyeFHbxMghizBVriFW/H6pERLS+e/8rxPqP8glVazVIvPunVGVRs8v9s2Qvr6KIHcRJ+ZeEC6T5hKZm3SkUGRb11XmbDE1HsvWAIuAjbPAovDZNXiiTS7tT+fiYcuQX5+4G/lnwMKi9UsEDfEFLhlesdC4wiHVXxkmifXjHh3JKHWdHHHdvgyGraGCxgQnd/UZVywk97q6lX6qG2oSUoxMi6eaKaMhMmWNBZBDFfYwQsPBQj+u5L5/IWgmTw5BFUrn6bJKH+Vpcobb32G/Za6Zesjh8tYm0pKwPT2ZNn73eXnGpJhCMdIBGechaMmJp1iMfHdgihYI+N8L8vpUfSDvzfUudGqFOuQAGb7D8TX/iSVUmIuvdP+P+ciVw7DZi6DMwpcgQ+e3cf3xBXS9YQFlLW1k6PJpd70RtD5U/ghoSNT/I0AVjCbusZKyP9vl3GBSZJiatK9yA86cI0ttFBQcO6SLl49x3zUOntcKD1JEo/N82JaMsbZJ2hLf8UvsAj3L1Gf9/chxfTY3env3G7pdXgjU+U5Ao09aVFTcJNyDYaLnfYa6MTh5c7d8RA4ZQatNQkcFBnJ/ZQVbmkExHV9qAZMMVrLVvrbZSDsCC+pjtOhh0l0Nxeui/fWhlB6Nq/N+b2gW3A7p51euozHVNCxq9LuH25nSKycsZkl98DCck8L50zkpMYkTq7enWGgXjVlIw6wS0VNvbkhR7p+MFnPvtwmimkXpjB5TtU820hKptu+R3kCXXyMAX2IdpkoPwGnp5v/OpL/A9E3Pk8cG1TQCZRvWmSOArGgRQU489wPO/2N59VZC9LvVr1F2DxzSFKeCl9mOgNkrp2nl7Rjcp0Z99wJoGQT5AA0j9bdmaOJ+jd9UsjeZFchZuru+lqTe2RfJNvi8xnucYPS0n9gPECwqG/4Ih7ldqDlzsQBE/cu35C2SzQ0/vUaSF5R6w/KNu5WvfUoaIAF99Jzt4qGnQ5E8W3/QOUuI2FXfVdJi/cn5LdRJcR4g7TAkhd7xFBh9i5MWdrc+azh33ywUAklqeWcqAVqVgepPxGadw+2wTBs+OrRIs4JzZtsqDmTVJCnvyv7sUFbCQm6XNm1QuCgyDG44btfrHssX+PEapR90p9RA4XbUWyw4FRdo6DdL7hanHGDmwZfDuGe4LuKnJefrUTLA1gLvzQKkNtNL/l51MeewHsjVgGzLiyh69G7PbmSkSG8KHR3+TcZ4UtN3SM7wwa/KMp+uvPavYcpp4aytW86beA5LjV73IS4J2u/HW2FvzBvpkCPk+X+q9kOrvudHYjaWqADSfTsbZeEEL+ZH+BiYHklOtgwr/tcFIZMVcgqNC1iPQ3k8g2bkyTpHiKiDHD1zENScGZ9FAHbGXQLDE/OUpq5Fq8bv+kMfga0905RcI4wy5bRK/P4KqF17y4vVmP9q90/gv4+WQ0bCFWZ0Sa+W31Xiv5KDo7Cg6yBGLiaioCf0nJ40kz+vzc5vvEi+IsrBDsRVD0NhtPCybL5x9b5/WS7F4uKipNwekMeQWH6RjipINanUBmrMfidedq2ql8EW3ZALQaymOTUNcnLtGIw38E6Pv3qcIo+bcKd8DvjmUQqxLRYgERelIfU2fZBGdbF3XVbFlBkjyZbEMkdcGO0tlIcjXYLT5qUVwcdoFqtBsh5Do0HFb5Ln47J8xh99ku3dcHXITa6j3AKHbx5MftKmUl9Zx63upuOhZhbXnG3TbKsV/Gu7JDJYiUILRanhSf3HsVIHROW8jFkQ9MKMv6DqxmEnU2UhxelGBq/VtL33aTkERNbE/A6C1c052ugM84hvyHbhYsdgBtStzAhuHmAk+F4VKi/FGvqrhGVEyGs/u5DdzfWBDpeMSq3xeUTxM7n2nBt3stiQ+IolUite8UW3aMkcxesQWqU3rlM1WKiIvxF398ZfuZpUJ2vSpZq204cRBCLhY3TurTLs5bgR/KwCHEFuSP7joxrrohSG+AE/ZxzGmXgGg94mmOhGB94K2e9wCCl3MhfwTiH8LXgXPD5a06/cHCXkKQ4k3Yui5J3gd4XQ4Adyoo9KSolJ2waQGDu8w+NF2doVLPP1Q8SintCYdA1N66LKbQMY2443H83MQPFHWr+gx5lIi1TBjahhHTAoUpywjHH/MKeSftSi3Fc3+hZi2tQJ760wSjHgMAFVcv6Z8aZCqUrnEf3MPQJM2DlqHIuymNCADHTiCsODvaXRZtYYPjZiH12mu49ehf+/3RYwn1fyO4p2u603LAI/PQMrm6w1dXRPQID9gSw/EEO+kLOBN2eh7irncZ+W349rBCs3R8SorsTpIcAIJ2xyQswCxPeIJwb9Vgyzlm+ON+mPHW8O2jAdChxwWvXz9I/Tje0m70YTXmIovMjuqpNMwELMzjP8lZ/mmyspF8joqOaujSoM5Ch0DsSGCCrcYlq+SZUQkBOuZS/SsBg1TnOyAXn6585298hU+csHhtKijtmz3ikNCEkfLKNrpB7mmN/qiO1WEwg0ee5R4+VVzMFedoI6D2A/Gva0I2QG13+2ovI+QaFhZ2KW5i/h9eGCwc33N7DLXBishDytDgoYiyjTLPLsnkfDpkcgAntypJjNPJ+r+K3jOzkQXh76dQewFX72mgciv7z8vr4hTk8+iHRJaOfenyu9rOG++8qCesZf+Swzh0EBwXUicD8bpshEZVMqUIScNWQ7Kne4TQhaibcNp6qVqmoyj7Q57/1lwqbTZAqyrZK54MFtj3ccg1IEHL/E7R2+1BcdSDldo3U/7KU6YJ+Qx49tMNIUfS+WrSnYRG0lamHct+CzIkQalfJCke1nPC3lqmpMSHoPbrvAj7/wggM5HxS/m4RQKxk4afSnOJUAWCMpkXupdN3t/3n2iT81mQgM+/yljVAHyqEx4o5R2Hp2hJcrUhoG3uzMmXOBBTJjwPBqKQAyyo5pm4AjwuD1njCKySKR4Ck4QhtuLVEwgqR2bMKfog70ubpqc7R/tEb2nHJAPW8hM6dickIlhUfELWIxaEIYPN6/YnHPVhAj6PVizM1/YBw4P6wwj54VA3vB9cufI7vAcLC3ekjIE3Gd+FMYNO19nHHMSc2mu2FkgHZlSG5Qbil7iaHlzbMJTnH3njjp6kNUAHTvkAAEkWERTdcx2yRd3KBjT2ehFscLUbB72e7Dj/abr2qnaxP0ZFLoi5r73jidZq0jpzsJilnP08xavnpNd0qsUBtQU4d1dL5TrdiPsQKy6qPr/nNbLnktqOgaORN8YL7qc/PrsCGWwQKsH0Pp1dv226B5GPRIPPajLkJ/pVR7ReGcs8o1pEyslMqjRraR7K70x4JrazpHFF6FKWlq++KoKkUuHIhFwLtyb5JfLF5zA1L8uERwTpg00E/sTZCXef+n/G/iJu9LMXGrPmsGf7lqTYei+ws+w4uAqFWjsSY5SQtugzzIc8eZvntFphUCW/fhwEqqFQsuuCqFB5u5596jy/l6z9xu3lMfvrd1Ny+oA2L1Gewt5gxhlmoJRgncgu4jJe2/QZf17bqKtFT7tHOciTmOOmieDw91eB5uct4bPm143nDXklreL8FLysXwRMXDuOytbP1NpDXNfEBEiF3sSJ8r3ZXXKPCp6pTTrhxoyUaDrYvG0GUFUne7ymLT5t0zylj+op5YQcMiGoUQZU4lm0zSuJsk27LkAKcEGt5Dvzn5LLvoIAqqhJuRxchfoV7upmqcQJjFlqXZvbVaRTaRtpcxL4z5l4wL3mCWSWQWglhRtVg62ghi+KS62LEqz5n4yeIJPaM2ZpGD6oiCoCYMvQFny0NOhR+jpEw9kCoqeHroOL9iAH6nbLU2nYw7zVCxCEGKnvp5to5Pw9nv5nsEC5uAz0jCBwRFDzke0LeJv+1kb2NOmF9OgSAL526XKadzWdWR1NtJWBEKBl/rEL/mqvuCkHP5/HfiHu2FUA49jaxQvx0PWGs6WMeV9g880nZd32hx6tF/7RSrNLXDuRCorT4fWG9wCov/npq2lA80bewYxl4/LHuVUQP9bDDTUVzss4rJR0NApe74TDo/4Gzndt27jkacg6vZK7L1VC/rq1/L4RtIgSXojaKB5z6L+2HVuLMY4KxRfNIdGkLV64RV8NliQ/rRUICLA0eJTuV7KXGOotyrVVOqZpC5s1br/49gZM536mrdzzkFe0QldhInS9ixPxgce318quPrcSxNoKtwG1u+H7d0JpCqIN3lxOBm15Bz5Yt5rcvuhUezRq//Mxy3fqaxuipGS+iFkxQvIQwbqxdECO40Qe8h8bWT5/5lNFlKt7ohjF/yHRLbixgHZ0EmkvA18BjsCxg17ZQmlwvsZpn5QLm4kHd8z7SXH1SCVnJ4DehslktIE+vnfyoUPewZzfY9xhMMVF3X/XowP5meAcCc7yKKMuNNI2DrHJPjS8V7ELmKAjBRbaVdY2WcgVmqtThsL625XDlsQjttFSr1TGUDZgcWYA/SVcIVk55Hs83ml6d0MN+UI854ufLziBoI7ImwrPxrUgfdC7nkKR5e5toOb7vJyGp+6AAnN655KlGSsEc6u/SVvNojfKbR5iN5XlJSckWKZJd1kfDiu1I13IOVvDzyH+AduHoK1hPC5Si92YYuCMB9E/k6NL3vmSrC02FJCjCyZHlvPDNKro8/y/HLtbDEIr7oIesD1tl/eb8hP9JtQPe3a4b09lQ3/907o3eXuAfWqdqv5Y4QxvPVx51SXijbC4agF3vn7Caz/Lvg2kirVsfE5ihm6vKZn5wRi4x8ekO59y+X9GRyQPWYxdyBKRF3eXXvF+1TaASCHbIeGKq3Zoo348fiTOUIT3mhqYpi5DavveFmJgsmE6BX453rY9cbTmzdptq9isyOYnLXTIFS7hLy8SMWnN+EgBU4KdctEz774EhPGlLvGN6+10jYbXdtB8vUsiYfUY5QU/OHjIJP8MmdBrP/qMUZxrEz7OACFNTxcNWg5f4/98wS+tq9KyqULXLTbfel4eX1FDftH3KdH4q9tb/5sXIZO/lhECootrpfGz5wHgDqyQ8Ji7xZG2NRq4lTwKkIn+qbshS+Jd9S2ozgx33H0ecMhIGYy+gWPzNus6bbl1OAA0TB52U1F7tJ2GMtbwCUkVZW7em8tS/6aQ1LhwGngP25YvG/UY+dAcuT4tKend+aNojsrCZDxQjmlRhk0vyN4sDBclZ2/6cEJFPv5xisOai+fye5oIVhhvtyfIcsTbFm41VnsAhe8wUStm3VvbT0wsMxRcSP2R6AgcKQ5pL9bk1FEaolOF5ZE+4mDX10n2F6ZokYorLh9ETIpdsXoDlp6uoSYNqZFkyWodhddj8VOG4//A8YyFMR1ZUJ7Kmh6AK/BpRhL1l5vmtl0OiDSFx0NlClWBZ0PpyTabZpdEG6AI5j4y87WsMVXNF5eyV7ky77vIQy6brOVQK0kHvD4stI7ONdJepDRgjjdI7biUpH/Vx1ScCYys4tin8mFZ97/any2iL7gXk2Bff+2y9ZCwTMlRthpv7s8tDynfymX1O63deVX0ZtF8WYmr011zYKyK+7R00dnWPBm+8OdtI4S2H/SRnBQGPxH81GJxO7n49W6LHfo2jQ+7x+jDkIfb/JBn9FJvTv6DQa9vtJAqXBBa+A3mkYxS/cELECixjAdS623R/jzseW623vGvvMk149Ebo9On4q/NrUvHiNvuy9Ef1luY3A91Wy3VraPIMnGG+gD2t6wbxqtfLYalotBJ2gZ3V8x4XBrXF3K9P8vTNGPYgixzL9IrIHxvkMsgliC7avspMs4wMSvLy0S8p3gJLN6x1oYpmcr/09/eMUTXmRbYt7243Fyz3xDyhW89eGeWknZz6nYveL8vo9LiM4MKafUIzS87Dxpw+qfO2sthsc84jJmIuAkZom86kW2jalkoCvymlx3yQV1JGNOTiZCGSolg/E6lPH2gNQRhdGHZVlZxA46ff1f4A6lrBeUVNrbGCSfgfVZBtkOGs2LPCL/n1LVZYycVKZeppg33vEoqymzsyG7qmk8NVR2tcvXjwfmBUnUJSbcSy49wyKQz20pxfqIZXo8kM8zw+DJIyJB8G3cSHKd0AUO0iyYzAC3Nh/lVr0qkXgY1wYa7LVx6a/Ur/rOJpbruPVPg4G7Q7HIKViAG1QUQ+hFW9hulnbia3xiaPLrEqPAK3ONlbc624iZQBKNDASpbgty6V8XOqipQskXMXL/3/EN97UAIG+jJN0TuIgoAhEVzoXA8KIdyLfyknmz6nVrLvnEFbXMEyVBWSMNsH0fIAWtkdHlmJ2ZkWRybuSSmBhWvJLRT7aQfeZYwAtB2lMqchGWuAMjwbDh9ZACBBP/swbKVEIJXdRsJcjffhip/3R9a5QnP9GWlj2oI/WH/8NyOTMirXlsN/JdHLDo9QXywrEgMWNbF5AAW8QpII4RW4Dc8oT/hFj1W2Sh9/1R+unO3IfCKIdYOC6zK4kR2ItBCSSfRFutrWeDDtLeSEyo0fwf75z46joUW271b+UI31X4Ek4b9MbuE92KDpUW105ZagAxfb65Pu62+vcRFvfJy5UjQwd1sZkrqaIPgSGXhKQvXkASxqpsVzG6ugQyfY65FZA3KLuKRu+QBvXAAc0KaigaS8Zah9kodwf0bUWN0FV3wKMywJvGcntP41I0g+yc6ZKB/mRDHAAGqA+dEoAyVW50KcRkicG4lThduBEuW7cAAAAAAAAA"
+                        alt="MacBook Air" class="h-10 w-auto group-hover:scale-105 transition" />
+                    <span class="text-[11px] font-medium text-zinc-600 group-hover:text-black">MacBook Air</span>
+                </a>
+                <a href="#macbook-pro" class="group space-y-2 flex flex-col items-center">
+                    <img src="https://res-academy.cache.wpscdn.com/images/seo_posts/20250514/0c5473267d7e60e3f807afe9a520448f.png"
+                        alt="MacBook Pro" class="h-10 w-auto group-hover:scale-105 transition" />
+                    <span class="text-[11px] font-medium text-zinc-600 group-hover:text-black">MacBook Pro</span>
+                </a>
+                <a href="#imac" class="group space-y-2 flex flex-col items-center">
+                    <img src="https://images.macrumors.com/t/MRLDVW2ExRH6dmGKL6UzdwluIig=/3840x/article-new/2024/10/Apple-iMac-M4-hero-feature.jpg"
+                        alt="iMac" class="h-10 w-auto group-hover:scale-105 transition" />
+                    <span class="text-[11px] font-medium text-zinc-600 group-hover:text-black">iMac</span>
+                </a>
+                <a href="#mac-mini" class="group space-y-2 flex flex-col items-center">
+                    <img src="https://www.macprices.net/blog/wp-content/uploads/2024/07/Apple-Mac-mini-M2-and-M2-Pro-hero-230117.jpg"
+                        alt="Mac mini" class="h-10 w-auto group-hover:scale-105 transition" />
+                    <span class="text-[11px] font-medium text-zinc-600 group-hover:text-black">Mac mini</span>
+                </a>
+                <a href="#mac-studio" class="group space-y-2 flex flex-col items-center">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.Larbg1UtuZEgGiPm3SW06AHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Mac Studio" class="h-10 w-auto group-hover:scale-105 transition" />
+                    <span class="text-[11px] font-medium text-zinc-600 group-hover:text-black">Mac Studio</span>
+                </a>
+                <a href="#mac-pro" class="group space-y-2 flex flex-col items-center">
+                    <img src="https://preview.free3d.com/img/2019/09/2188284234962044206/z3040cnn.jpg" alt="Mac Pro"
+                        class="h-10 w-auto group-hover:scale-105 transition" />
+                    <span class="text-[11px] font-medium text-zinc-600 group-hover:text-black">Mac Pro</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. Ribbon Notification -->
+        <div class="bg-zinc-200/50 py-3 text-center text-xs text-zinc-600">
+            Tiết kiệm ngay khi mua Mac phục vụ mục đích học tập.
+            <a href="#" class="text-blue-600 hover:underline ml-1 font-medium">Tìm hiểu thêm &rsaquo;</a>
+        </div>
+
+        <!-- 4. Hero Section Đen Tuyền: MacBook Pro M-Series -->
+        <section id="macbook-pro" class="w-full bg-black text-white pt-16 pb-12 px-4 overflow-hidden">
+            <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+                <span class="text-xs uppercase tracking-widest text-zinc-400 font-semibold">Pro Power</span>
+                <h2 class="text-4xl sm:text-6xl font-bold tracking-tight mt-1 text-zinc-100">MacBook Pro</h2>
+                <p class="text-xl sm:text-2xl text-zinc-300 font-normal tracking-tight mt-2">Mind-blowing. Head-turning.
+                </p>
+                <p class="text-sm text-zinc-400 mt-1">Từ 39.999.000đ hoặc 1.630.000đ/tháng</p>
+
+                <!-- 4. Cụm nút CTA tròn chuẩn tỷ lệ Apple -->
+                <div class="mt-4 flex items-center justify-center gap-3 text-sm">
+                    <a href="#"
+                        class="px-5 py-2 rounded-full text-sm font-medium text-zinc-900 bg-white hover:bg-white/25 hover:text-zinc-100
+                         border border-white/20 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.15)] transition duration-200">
+                        Learn more
+                    </a>
+                    <a href="#"
+                        class="px-5 py-2 rounded-full text-sm font-medium text-white bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/10 hover:border-white/25 hover:border-white/25 shadow-none hover:shadow-[0_0_30px_-5px_rgba(45,212,191,0.5)] transition-all duration-300">
+                        Pre-order
+                    </a>
+                </div>
+
+                <div class="mt-10 w-full max-w-2xl">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80"
+                        alt="MacBook Pro Mockup" class="w-full h-auto object-contain mx-auto rounded-lg" />
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Featured 50/50 Cards: MacBook Air vs iMac -->
+        <section class="w-full bg-white text-zinc-900 py-16 px-4 sm:px-8">
+            <div class="max-w-7xl mx-auto space-y-12">
+
+                <div class="text-center space-y-1">
+                    <h3 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-950">Dòng Máy Nổi Bật</h3>
+                    <p class="text-sm text-zinc-500">Thiết kế mỏng nhẹ hay sức mạnh tất cả trong một?</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+
+                    <!-- Card 1: MacBook Air -->
+                    <div id="macbook-air"
+                        class="group relative w-full h-[520px] rounded-2xl overflow-hidden bg-zinc-100">
+                        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=1000&q=80"
+                            alt="MacBook Air"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                        <div class="absolute bottom-8 left-8 space-y-2 text-white">
+                            <span class="text-xs text-zinc-300 font-medium">Siêu mỏng. Siêu nhanh.</span>
+                            <h4 class="text-2xl font-bold">MacBook Air</h4>
+                            <p class="text-xs text-zinc-300 max-w-xs">Thiết kế không quạt êm ái cùng thời lượng pin lên
+                                đến 18 giờ.</p>
+                            <div class="pt-2">
+                                <a href="#"
+                                    class="inline-block bg-white text-zinc-950 text-xs font-semibold px-5 py-2 rounded-full hover:bg-zinc-200 transition">
+                                    Tìm hiểu thêm
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: iMac -->
+                    <div id="imac" class="group relative w-full h-[520px] rounded-2xl overflow-hidden bg-zinc-900">
+                        <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1000&q=80"
+                            alt="iMac 24 inch"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute bottom-8 left-8 space-y-2 text-white">
+                            <span class="text-xs text-zinc-300 font-medium">Tất cả trong một</span>
+                            <h4 class="text-2xl font-bold">iMac 24"</h4>
+                            <p class="text-xs text-zinc-300 max-w-xs">Màn hình Retina 4.5K sống động trong thiết kế mỏng
+                                chỉ 11.5mm.</p>
+                            <div class="pt-2">
+                                <a href="#"
+                                    class="inline-block bg-white text-zinc-950 text-xs font-semibold px-5 py-2 rounded-full hover:bg-zinc-200 transition">
+                                    Tìm hiểu thêm
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Lưới So Sánh Cấu Hình Các Dòng Mac (Grid Comparison) -->
+        <section class="w-full bg-zinc-50 py-16 px-4 sm:px-8 border-t border-zinc-200">
+            <div class="max-w-7xl mx-auto space-y-12">
+                <div class="text-center space-y-1">
+                    <h3 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-950">Khám Phá Các Dòng Mac Khác
+                    </h3>
+                    <p class="text-sm text-zinc-500">Chọn cấu hình đáp ứng chính xác khối lượng công việc của bạn.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+                    <!-- Mac mini -->
+                    <div id="mac-mini"
+                        class="bg-white p-8 rounded-2xl border border-zinc-200/80 shadow-sm flex flex-col justify-between">
+                        <div class="space-y-4 text-center">
+                            <h4 class="text-xl font-bold text-zinc-900">Mac mini</h4>
+                            <p class="text-xs text-zinc-500">Kích thước nhỏ gọn, hiệu năng khổng lồ trên bàn làm việc.
+                            </p>
+                            <span class="block text-sm font-semibold text-zinc-900">Từ 14.999.000đ</span>
+                        </div>
+                        <div class="pt-8">
+                            <a href="#"
+                                class="block text-center w-full py-2 bg-zinc-100 hover:bg-zinc-200 text-xs font-semibold rounded-full text-zinc-900 transition">
+                                Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mac Studio -->
+                    <div id="mac-studio"
+                        class="bg-white p-8 rounded-2xl border border-zinc-200/80 shadow-sm flex flex-col justify-between">
+                        <div class="space-y-4 text-center">
+                            <h4 class="text-xl font-bold text-zinc-900">Mac Studio</h4>
+                            <p class="text-xs text-zinc-500">Trạm làm việc chuyên nghiệp cho đồ họa 3D và dựng phim 8K.
+                            </p>
+                            <span class="block text-sm font-semibold text-zinc-900">Từ 52.999.000đ</span>
+                        </div>
+                        <div class="pt-8">
+                            <a href="#"
+                                class="block text-center w-full py-2 bg-zinc-100 hover:bg-zinc-200 text-xs font-semibold rounded-full text-zinc-900 transition">
+                                Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mac Pro -->
+                    <div id="mac-pro"
+                        class="bg-white p-8 rounded-2xl border border-zinc-200/80 shadow-sm flex flex-col justify-between">
+                        <div class="space-y-4 text-center">
+                            <h4 class="text-xl font-bold text-zinc-900">Mac Pro</h4>
+                            <p class="text-xs text-zinc-500">Khả năng mở rộng PCIe đỉnh cao cho studio và trung tâm dữ
+                                liệu.</p>
+                            <span class="block text-sm font-semibold text-zinc-900">Từ 179.999.000đ</span>
+                        </div>
+                        <div class="pt-8">
+                            <a href="#"
+                                class="block text-center w-full py-2 bg-zinc-100 hover:bg-zinc-200 text-xs font-semibold rounded-full text-zinc-900 transition">
+                                Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 7. Footer chuẩn Nike 4 Cột -->
+    <footer class="w-full bg-white text-zinc-900 border-t border-zinc-200">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+            <div class=" grid grid-cols-1 md:grid-cols-5 gap-8 pb-16">
+                <!-- Cột 1-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Shop and Learn</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Store</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Mac</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">iPad</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">iPhone</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Watch</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">AirPods</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Support</a></li>
+                    </ul>
+                </div>
+                <!-- Cột 2-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Entertainment</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple One</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple TV</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Music</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Arcade</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Fitness</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple News</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple TV</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Podcasts</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Books</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">App Store</a></li>
+                    </ul>
+                </div>
+                <!-- Cột 3-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Apple Store</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Find a Store</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Today at Apple</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Camp</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Store App</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Financing</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Order Status</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Shopping Help</a></li>
+                    </ul>
+                </div>
+                <!-- Cột 4-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Apple Values</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Accessibility</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Education</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Environment</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Inclusion and
+                                Diversity</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Privacy</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Racial Equality and
+                                Justice</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Supply Chain
+                                Innovation</a></li>
+                    </ul>
+                </div>
+                <!-- Cột 5-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">About Apple</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Newsroom</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Leadership</a>
+                        </li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Investors</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Corporate
+                                Responsibility</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Contact Apple</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

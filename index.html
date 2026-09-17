@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Style Interface</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="bg-zinc-100 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 antialiased selection:bg-zinc-900 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav
+            class="fixed top-0 left-0 w-full z-50 bg-zinc-100/40 dark:bg-zinc-900/20 backdrop-blur-md border-b border-zinc-300/50 dark:border-zinc-800/60 transition-colors">
+            <div
+                class="max-w-5xl mx-auto px-4 h-11 flex items-center justify-between text-xs text-zinc-600 dark:text-zinc-300">
+
+                <!-- Apple Logo -->
+                <a href="index.html" class="font-bold hover:text-black dark:hover:text-white transition">
+                    APPLE
+                </a>
+
+                <!-- Menu Links -->
+                <div class="hidden md:flex items-center space-x-8 tracking-tight font-normal">
+                    <a href="index.html" class="hover:text-black dark:hover:text-white transition">Store</a>
+                    <a href="product_mac.html" class="hover:text-black dark:hover:text-white transition">Mac</a>
+                    <a href="product_ipad.html" class="hover:text-black dark:hover:text-white transition">iPad</a>
+                    <a href="#" class="hover:text-black dark:hover:text-white transition">iPhone</a>
+                    <a href="#" class="hover:text-black dark:hover:text-white transition">Watch</a>
+                    <a href="#" class="hover:text-black dark:hover:text-white transition">AirPods</a>
+                    <a href="#" class="hover:text-black dark:hover:text-white transition">Support</a>
+                </div>
+
+                <!-- Icons -->
+                <div class="flex items-center space-x-6">
+                    <button aria-label="Search" class="hover:text-black dark:hover:text-white transition">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+                    <button aria-label="Cart" class="hover:text-black dark:hover:text-white transition">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content-->
+    <main class="pt-11">
+        <!-- Khối Hero Section nền đen chuẩn Apple -->
+        <section class="w-full bg-black text-white pt-14 pb-12 px-4 overflow-hidden select-none">
+            <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+
+                <!-- 1. Tiêu đề sản phẩm -->
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-zinc-100">
+                    iPhone 18 Pro
+                </h2>
+
+                <!-- 2. Slogan phụ -->
+                <p class="mt-2 text-xl sm:text-2xl font-normal text-zinc-300 tracking-tight">
+                    Pro further.
+                </p>
+
+                <!-- 3. Ngày mở bán -->
+                <p class="mt-1 text-sm sm:text-base text-zinc-400 font-normal">
+                    Available starting 9.18
+                </p>
+
+                <!-- 4. Cụm nút CTA tròn chuẩn tỷ lệ Apple -->
+                <div class="mt-4 flex items-center justify-center gap-3 text-sm">
+                    <a href="#"
+                        class="px-5 py-2 rounded-full text-sm font-medium text-zinc-900 bg-white hover:bg-white/25 hover:text-zinc-100
+                         border border-white/20 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.15)] transition duration-200">
+                        Learn more
+                    </a>
+                    <a href="#"
+                        class="px-5 py-2 rounded-full text-sm font-medium text-white bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/10 hover:border-white/25 hover:border-white/25 shadow-none hover:shadow-[0_0_30px_-5px_rgba(45,212,191,0.5)] transition-all duration-300">
+                        Pre-order
+                    </a>
+                </div>
+
+                <!-- 5. Ảnh sản phẩm (Chiếc máy nằm ngang) -->
+                <div class="mt-8 w-full max-w-3xl flex justify-center">
+                    <img src="https://cdn.timeturk.com/uploads/2026/09/iphone-18-pro-max-tamir-ucretleri-diger-hasar-97-649-tl-1.webp"
+                        alt="iPhone Pro Preview" class="w-full h-auto object-contain max-h-[420px]" />
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Dải phân cách mỏng bên dưới trước khi sang section nền sáng -->
+        <div class="w-full h-3 bg-zinc-100 dark:bg-zinc-950"></div>
+        <!-- Phần show sản phẩm -->
+        <section class="w-full bg-white text-zinc-900 py-12 px-4  sm:px-12">
+            <div class="max-w-7xl mx-auto space-y-16">
+                <div>
+                    <h3 class="text-xl font-bold tracking-tight text-zinc-950 text-center">Series Mới Nhất</h3>
+                    <h5 class="text-sm text-zinc-600 text-center">iPhone 18 | iPhone Duo</h5>
+                </div>
+
+                <!--2 Thẻ lớn tỉ lệ 50/50-->
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                    <!-- Card 1: iPhone 18 -->
+                    <div class="group relative h-[480px] sm:h-[540px] rounded-sm overflow-hidden bg-zinc-100">
+                        <img src="https://th.bing.com/th?id=OIF.vMof5d41I7M%2buehnojVxiw&r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="iphone18"
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent">
+                        </div>
+
+                        <!-- Nội dung đè đáy card -->
+                        <div class="absolute bottom-8 left-8 space-y-2 text-white">
+                            <span class="text-xs text-zinc-300 font-medium drop-shadow">9/2026</span>
+                            <h4 class="text-lg font-bold drop-shadow">Series iPhone 18</h4>
+                            <a href="#"
+                                class="inline-block px-5 py-2 rounded-full text-sm font-medium text-white bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/10 hover:border-white/25 shadow-none hover:shadow-[0_0_30px_-5px_rgba(45,212,191,0.5)] transition-all duration-300">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Card 2: iPhone Duo -->
+                    <div class="group relative h-[480px] sm:h-[540px] rounded-sm overflow-hidden bg-zinc-900">
+                        <img src="data:image/webp;base64,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"
+                            alt="Pegasus Plus 2"
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent">
+                        </div>
+
+                        <!-- Nội dung đè đáy card -->
+                        <div class="absolute bottom-8 left-8 space-y-2 text-white">
+                            <span class="text-xs text-zinc-300 font-medium drop-shadow">9/2026</span>
+                            <h4 class="text-lg font-bold drop-shadow">iPhone Duo</h4>
+                            <a href="#"
+                                class="inline-block px-5 py-2 rounded-full text-sm font-medium text-white bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/10 hover:border-white/25 hover:border-white/25 shadow-none hover:shadow-[0_0_30px_-5px_rgba(45,212,191,0.5)] transition-all duration-300">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3. Trending Grid (3 thẻ dọc kèm nút lướt góc trên) -->
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold tracking-tight text-zinc-950">Trending</h3>
+
+                        <!-- Nút điều hướng Slide tròn -->
+                        <div class="flex items-center gap-2">
+                            <button
+                                class="w-8 h-8 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-700 flex items-center justify-center transition">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                </svg>
+                            </button>
+                            <button
+                                class="w-8 h-8 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-700 flex items-center justify-center transition">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <!-- Trend 1 -->
+                        <div class="relative h-[420px] rounded-sm overflow-hidden bg-zinc-100 group">
+                            <img src="https://androidsp.com/wp-content/uploads/2025/02/Gj_5_cbaYAAAPrf.jpg"
+                                alt="Trending iPhone 17"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                            <!-- Nội dung đè đáy card -->
+                            <div class="absolute bottom-8 left-8 space-y-2 text-white">
+                                <h4 class="text-lg font-bold drop-shadow">Series iPhone 17</h4>
+                                <a href="#"
+                                    class="inline-block px-5 py-2 rounded-full text-sm font-medium text-white bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/10 hover:border-white/25 hover:border-white/25 shadow-none hover:shadow-[0_0_30px_-5px_rgba(45,212,191,0.5)] transition-all duration-300">
+                                    View
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Trend 2 -->
+                        <div class="relative h-[420px] rounded-sm overflow-hidden bg-zinc-100 group">
+                            <img src="https://th.bing.com/th/id/OIP.ceFrlaUNOrPpGN3coW7woAHaD4?w=345&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                                alt="Trending MacBook"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                            <!-- Nội dung đè đáy card -->
+                            <div class="absolute bottom-8 left-8 space-y-2 text-white">
+                                <h4 class="text-lg font-bold drop-shadow">Series MacBook</h4>
+                                <a href="#"
+                                    class="inline-block px-5 py-2 rounded-full text-sm font-medium text-white bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/10 hover:border-white/25 hover:border-white/25 shadow-none hover:shadow-[0_0_30px_-5px_rgba(45,212,191,0.5)] transition-all duration-300">
+                                    View
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Trend 3 -->
+                        <div class="relative h-[420px] rounded-sm overflow-hidden bg-zinc-100 group">
+                            <img src="https://wallpaperaccess.com/full/9565747.jpg" alt="Trending Apple Watch"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+
+                            <!-- Nội dung đè đáy card -->
+                            <div class="absolute bottom-8 left-8 space-y-2 text-white">
+                                <h4 class="text-lg font-bold drop-shadow">Series Apple Watch</h4>
+                                <a href="#"
+                                    class="inline-block px-5 py-2 rounded-full text-sm font-medium text-white bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/10 hover:border-white/25 hover:border-white/25 shadow-none hover:shadow-[0_0_30px_-5px_rgba(45,212,191,0.5)] transition-all duration-300">
+                                    View
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="w-full bg-white text-zinc-900 py-20 px-4 sm:px8">
+            <div class="max-w-7xl mx-auto space-y-16">
+                <!--Tiêu đề in đậm Spotlight-->
+                <div class="text-center space-y-3">
+                    <h2 class="text-5xl sm:text-7xl font-bold tracking-tighter uppercase text-black">
+                        SPOLIGHT
+                    </h2>
+                    <p class="text-sm sm:text-base text-zinc-600 max-w-2xl mx-auto">
+                        Designed to connect. Built to empower everything you do.
+                    </p>
+                </div>
+                <!--Lưới 8 cột icon sản phẩm-->
+                <div class="grid grid-cols-4  sm:grid-cols-6 lg:grid-cols-8 gap-x-4 gap-y-10">
+                    <!--Item 1-->
+                    <a href="#" class="group flex flex-col items-center text-center space-y-3">
+                        <div class="h-16 flex items-center justify-between">
+                            <img src="https://images.macrumors.com/article-new/2026/02/iPhone-18-Pro-Deep-Red-Feature.jpg"
+                                alt=""
+                                class="h12 w-auto object-contain group-hover:scale-110 transition-transform duration-300 ">
+                        </div>
+                        <span class="text-xs font-semibold text-zinc-800 group-hover:text-black">iPhone 18</span>
+                    </a>
+
+                    <!--Item 2-->
+                    <a href="#" class="group flex flex-col items-center text-center space-y-3">
+                        <div class="h-16 flex items-center justify-between">
+                            <img src="https://th.bing.com/th/id/OIP.fDYooVr0QKZ0OlHBpdtKvQHaEK?w=322&h=181&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                                alt=""
+                                class="h12 w-auto object-contain group-hover:scale-110 transition-transform duration-300 ">
+                        </div>
+                        <span class="text-xs font-semibold text-zinc-800 group-hover:text-black">iPhone 17</span>
+                    </a>
+
+                    <!--Item 3-->
+                    <a href="#" class="group flex flex-col items-center text-center space-y-3">
+                        <div class="h-16 flex items-center justify-between">
+                            <img src="https://gadget.jagatreview.com/wp-content/uploads/2025/09/iphone-17_2.webp" alt=""
+                                class="h12 w-auto object-contain group-hover:scale-110 transition-transform duration-300 ">
+                        </div>
+                        <span class="text-xs font-semibold text-zinc-800 group-hover:text-black">iPhone 16</span>
+                    </a>
+
+                    <!--Item 4-->
+                    <a href="#" class="group flex flex-col items-center text-center space-y-3">
+                        <div class="h-16 flex items-center justify-between">
+                            <img src="https://cdn.mos.cms.futurecdn.net/b31d4f55d8121b7ad0c5fbfc80a76664-1200-80.jpg"
+                                alt=""
+                                class="h12 w-auto object-contain group-hover:scale-110 transition-transform duration-300 ">
+                        </div>
+                        <span class="text-xs font-semibold text-zinc-800 group-hover:text-black">Mac</span>
+                    </a>
+
+                    <!--Item 5-->
+                    <a href="#" class="group flex flex-col items-center text-center space-y-3">
+                        <div class="h-16 flex items-center justify-between">
+                            <img src="https://th.bing.com/th/id/OIP._jtfc7ZGj2IFDXmQN6HPUwHaEK?w=293&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                                alt=""
+                                class="h12 w-auto object-contain group-hover:scale-110 transition-transform duration-300 ">
+                        </div>
+                        <span class="text-xs font-semibold text-zinc-800 group-hover:text-black">Apple Watch</span>
+                    </a>
+
+                    <!--Item 6-->
+                    <a href="#" class="group flex flex-col items-center text-center space-y-3">
+                        <div class="h-16 flex items-center justify-between">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.oVYuvFRGoAuNfrHbcXXN8gHaEK?r=0&w=1200&h=675&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                alt=""
+                                class="h12 w-auto object-contain group-hover:scale-110 transition-transform duration-300 ">
+                        </div>
+                        <span class="text-xs font-semibold text-zinc-800 group-hover:text-black">AirPods</span>
+                    </a>
+
+                    <!--Item 7-->
+                    <a href="#" class="group flex flex-col items-center text-center space-y-3">
+                        <div class="h-16 flex items-center justify-between">
+                            <img src="https://images.loksattaimg.com/2024/05/Apple-iPad-Pro-Launch-Marathi-News.jpg"
+                                alt=""
+                                class="h12 w-auto object-contain group-hover:scale-110 transition-transform duration-300 ">
+                        </div>
+                        <span class="text-xs font-semibold text-zinc-800 group-hover:text-black">iPad</span>
+                    </a>
+
+                    <!--Item 8-->
+                    <a href="#" class="group flex flex-col items-center text-center space-y-3">
+                        <div class="h-16 flex items-center justify-between">
+                            <img src="https://media.thuonghieucongluan.vn/uploads/2026/09/16/a-1789539027.jpg" alt=""
+                                class="h12 w-auto object-contain group-hover:scale-110 transition-transform duration-300 ">
+                        </div>
+                        <span class="text-xs font-semibold text-zinc-800 group-hover:text-black">iPhone Duo </span>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+    <footer class="w-full bg-white text-zinc-900 border-t border-zinc-200">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+            <div class=" grid grid-cols-1 md:grid-cols-5 gap-8 pb-16">
+                <!-- Cột 1-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Shop and Learn</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Store</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Mac</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">iPad</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">iPhone</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Watch</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">AirPods</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Support</a></li>
+                    </ul>
+                </div>
+                <!-- Cột 2-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Entertainment</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple One</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple TV</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Music</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Arcade</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Fitness</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple News</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple TV</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Podcasts</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Books</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">App Store</a></li>
+                    </ul>
+                </div>
+                <!-- Cột 3-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Apple Store</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Find a Store</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Today at Apple</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Camp</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Store App</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Financing</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Order Status</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Shopping Help</a></li>
+                    </ul>
+                </div>
+                <!-- Cột 4-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Apple Values</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Accessibility</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Education</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Environment</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Inclusion and
+                                Diversity</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Privacy</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Racial Equality and
+                                Justice</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Supply Chain
+                                Innovation</a></li>
+                    </ul>
+                </div>
+                <!-- Cột 5-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">About Apple</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Newsroom</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Leadership</a>
+                        </li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Investors</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Corporate
+                                Responsibility</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Contact Apple</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mac - Apple Style Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-100 text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white">
+
+    <!-- 1. Navigation Bar Apple -->
+    <header>
+        <nav
+            class="fixed top-0 left-0 w-full z-50 bg-zinc-100/40 dark:bg-zinc-900/20 backdrop-blur-md border-b border-zinc-300/50 dark:border-zinc-800/60 transition-colors">
+            <div
+                class="max-w-5xl mx-auto px-4 h-11 flex items-center justify-between text-xs text-zinc-600 dark:text-zinc-300">
+
+                <!-- Apple Logo -->
+                <a href="index.html" class="font-bold hover:text-black dark:hover:text-white transition">
+                    APPLE
+                </a>
+
+                <!-- Menu Links -->
+                <div class="hidden md:flex items-center space-x-8 tracking-tight font-normal">
+                    <a href="index.html" class="hover:text-black dark:hover:text-white transition">Store</a>
+                    <a href="product_mac.html" class="hover:text-black dark:hover:text-white transition">Mac</a>
+                    <a href="product_ipad.html" class="hover:text-black dark:hover:text-white transition">iPad</a>
+                    <a href="#" class="hover:text-black dark:hover:text-white transition">iPhone</a>
+                    <a href="#" class="hover:text-black dark:hover:text-white transition">Watch</a>
+                    <a href="#" class="hover:text-black dark:hover:text-white transition">AirPods</a>
+                    <a href="#" class="hover:text-black dark:hover:text-white transition">Support</a>
+                </div>
+
+                <!-- Icons -->
+                <div class="flex items-center space-x-6">
+                    <button aria-label="Search" class="hover:text-black dark:hover:text-white transition">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+                    <button aria-label="Cart" class="hover:text-black dark:hover:text-white transition">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-11">
+
+        <!-- 2. Chapter Nav (Thanh điều hướng danh mục dòng Mac dạng icon trượt) -->
+        <section class="bg-zinc-100 border-b border-zinc-200 py-6 overflow-x-auto">
+            <div class="max-w-5xl mx-auto px-4 flex items-center justify-between min-w-[700px] text-center">
+                <a href="#macbook-air" class="group space-y-2 flex flex-col items-center">
+                    <img src="https://m.media-amazon.com/images/G/31/img24/Tablet/ipad-air/r1813_Product_Page_Avail_Flex_Module_Amazon_Desktop_1500px_en-IN_01._CB558700558_.jpg"
+                        alt=" MacBook Air" class="h-10 w-auto group-hover:scale-105 transition" />
+                    <span class="text-[11px] font-medium text-zinc-600 group-hover:text-black">iPad Air</span>
+                </a>
+                <a href="#macbook-pro" class="group space-y-2 flex flex-col items-center">
+                    <img src="https://m.media-amazon.com/images/G/09/HLCX/PJEYE/Aplus/iPad_Pro_M5_COL_Product_Page_L_26_AMZ__ja-JP_Slices1._CB797053076_.jpg"
+                        alt="MacBook Pro" class="h-10 w-auto group-hover:scale-105 transition" />
+                    <span class="text-[11px] font-medium text-zinc-600 group-hover:text-black">iPad Pro</span>
+                </a>
+                <a href="#imac" class="group space-y-2 flex flex-col items-center">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.YKruySpnIz_W4CNmR0UgMAHaEK?r=0&w=1200&h=675&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="iMac" class="h-10 w-auto group-hover:scale-105 transition" />
+                    <span class="text-[11px] font-medium text-zinc-600 group-hover:text-black">iPad</span>
+                </a>
+                <a href="#mac-mini" class="group space-y-2 flex flex-col items-center">
+                    <img src="https://m.media-amazon.com/images/G/31/img24/Tablet/Apple/ipad-mini/iPad_mini_river_content_PC-1._CB545062401_.jpg"
+                        alt="Mac mini" class="h-10 w-auto group-hover:scale-105 transition" />
+                    <span class="text-[11px] font-medium text-zinc-600 group-hover:text-black">iPad mini</span>
+                </a>
+                <a href="#mac-studio" class="group space-y-2 flex flex-col items-center">
+                    <img src="https://images.macrumors.com/article-new/2023/10/Apple-Pencil-USB-C-sliding-cap-feature.jpg"
+                        alt="Mac Studio" class="h-10 w-auto group-hover:scale-105 transition" />
+                    <span class="text-[11px] font-medium text-zinc-600 group-hover:text-black">Apple Pencil</span>
+                </a>
+                <a href="#mac-pro" class="group space-y-2 flex flex-col items-center">
+                    <img src="https://m.media-amazon.com/images/I/61ommhDQy-L._AC_SL1500_.jpg" alt="Mac Pro"
+                        class="h-10 w-auto group-hover:scale-105 transition" />
+                    <span class="text-[11px] font-medium text-zinc-600 group-hover:text-black">Keyboards</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. Ribbon Notification -->
+        <div class="bg-zinc-200/50 py-3 text-center text-xs text-zinc-600">
+            Tiết kiệm ngay khi mua Mac phục vụ mục đích học tập.
+            <a href="#" class="text-blue-600 hover:underline ml-1 font-medium">Tìm hiểu thêm &rsaquo;</a>
+        </div>
+
+        <!-- 4. Hero Section Đen Tuyền: MacBook Pro M-Series -->
+        <section id="macbook-pro" class="w-full bg-black text-white pt-16 pb-12 px-4 overflow-hidden">
+            <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+                <span class="text-xs uppercase tracking-widest text-zinc-400 font-semibold">Pro Power</span>
+                <h2 class="text-4xl sm:text-6xl font-bold tracking-tight mt-1 text-zinc-100">iPad Pro</h2>
+                <p class="text-xl sm:text-2xl text-zinc-300 font-normal tracking-tight mt-2">Mind-blowing. Head-turning.
+                </p>
+                <p class="text-sm text-zinc-400 mt-1">Từ 19.999.000đ hoặc 1.630.000đ/tháng</p>
+
+                <!-- 4. Cụm nút CTA tròn chuẩn tỷ lệ Apple -->
+                <div class="mt-4 flex items-center justify-center gap-3 text-sm">
+                    <a href="#"
+                        class="px-5 py-2 rounded-full text-sm font-medium text-zinc-900 bg-white hover:bg-white/25 hover:text-zinc-100
+                         border border-white/20 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.15)] transition duration-200">
+                        Learn more
+                    </a>
+                    <a href="#"
+                        class="px-5 py-2 rounded-full text-sm font-medium text-white bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/10 hover:border-white/25 hover:border-white/25 shadow-none hover:shadow-[0_0_30px_-5px_rgba(45,212,191,0.5)] transition-all duration-300">
+                        Pre-order
+                    </a>
+                </div>
+
+                <div class="mt-10 w-full max-w-2xl">
+                    <img src="https://m.media-amazon.com/images/G/09/HLCX/PJEYE/Aplus/iPad_Pro_M5_COL_Product_Page_L_26_AMZ__ja-JP_Slices1._CB797053076_.jpg"
+                        alt="iPad Pro Mockup" class="w-full h-auto object-contain mx-auto rounded-lg" />
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Featured 50/50 Cards: MacBook Air vs iMac -->
+        <section class="w-full bg-white text-zinc-900 py-16 px-4 sm:px-8">
+            <div class="max-w-7xl mx-auto space-y-12">
+
+                <div class="text-center space-y-1">
+                    <h3 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-950">Dòng Máy Nổi Bật</h3>
+                    <p class="text-sm text-zinc-500">Thiết kế mỏng nhẹ hay sức mạnh tất cả trong một?</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+
+                    <!-- Card 1: MacBook Air -->
+                    <div id="macbook-air"
+                        class="group relative w-full h-[520px] rounded-2xl overflow-hidden bg-zinc-100">
+                        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=1000&q=80"
+                            alt="MacBook Air"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                        <div class="absolute bottom-8 left-8 space-y-2 text-white">
+                            <span class="text-xs text-zinc-300 font-medium">Siêu mỏng. Siêu nhanh.</span>
+                            <h4 class="text-2xl font-bold">MacBook Air</h4>
+                            <p class="text-xs text-zinc-300 max-w-xs">Thiết kế không quạt êm ái cùng thời lượng pin lên
+                                đến 18 giờ.</p>
+                            <div class="pt-2">
+                                <a href="#"
+                                    class="inline-block bg-white text-zinc-950 text-xs font-semibold px-5 py-2 rounded-full hover:bg-zinc-200 transition">
+                                    Tìm hiểu thêm
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: iMac -->
+                    <div id="imac" class="group relative w-full h-[520px] rounded-2xl overflow-hidden bg-zinc-900">
+                        <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1000&q=80"
+                            alt="iMac 24 inch"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute bottom-8 left-8 space-y-2 text-white">
+                            <span class="text-xs text-zinc-300 font-medium">Tất cả trong một</span>
+                            <h4 class="text-2xl font-bold">iMac 24"</h4>
+                            <p class="text-xs text-zinc-300 max-w-xs">Màn hình Retina 4.5K sống động trong thiết kế mỏng
+                                chỉ 11.5mm.</p>
+                            <div class="pt-2">
+                                <a href="#"
+                                    class="inline-block bg-white text-zinc-950 text-xs font-semibold px-5 py-2 rounded-full hover:bg-zinc-200 transition">
+                                    Tìm hiểu thêm
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Lưới So Sánh Cấu Hình Các Dòng Mac (Grid Comparison) -->
+        <section class="w-full bg-zinc-50 py-16 px-4 sm:px-8 border-t border-zinc-200">
+            <div class="max-w-7xl mx-auto space-y-12">
+                <div class="text-center space-y-1">
+                    <h3 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-950">Khám Phá Các Dòng Mac Khác
+                    </h3>
+                    <p class="text-sm text-zinc-500">Chọn cấu hình đáp ứng chính xác khối lượng công việc của bạn.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+                    <!-- Mac mini -->
+                    <div id="mac-mini"
+                        class="bg-white p-8 rounded-2xl border border-zinc-200/80 shadow-sm flex flex-col justify-between">
+                        <div class="space-y-4 text-center">
+                            <h4 class="text-xl font-bold text-zinc-900">Mac mini</h4>
+                            <p class="text-xs text-zinc-500">Kích thước nhỏ gọn, hiệu năng khổng lồ trên bàn làm việc.
+                            </p>
+                            <span class="block text-sm font-semibold text-zinc-900">Từ 14.999.000đ</span>
+                        </div>
+                        <div class="pt-8">
+                            <a href="#"
+                                class="block text-center w-full py-2 bg-zinc-100 hover:bg-zinc-200 text-xs font-semibold rounded-full text-zinc-900 transition">
+                                Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mac Studio -->
+                    <div id="mac-studio"
+                        class="bg-white p-8 rounded-2xl border border-zinc-200/80 shadow-sm flex flex-col justify-between">
+                        <div class="space-y-4 text-center">
+                            <h4 class="text-xl font-bold text-zinc-900">Mac Studio</h4>
+                            <p class="text-xs text-zinc-500">Trạm làm việc chuyên nghiệp cho đồ họa 3D và dựng phim 8K.
+                            </p>
+                            <span class="block text-sm font-semibold text-zinc-900">Từ 52.999.000đ</span>
+                        </div>
+                        <div class="pt-8">
+                            <a href="#"
+                                class="block text-center w-full py-2 bg-zinc-100 hover:bg-zinc-200 text-xs font-semibold rounded-full text-zinc-900 transition">
+                                Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mac Pro -->
+                    <div id="mac-pro"
+                        class="bg-white p-8 rounded-2xl border border-zinc-200/80 shadow-sm flex flex-col justify-between">
+                        <div class="space-y-4 text-center">
+                            <h4 class="text-xl font-bold text-zinc-900">Mac Pro</h4>
+                            <p class="text-xs text-zinc-500">Khả năng mở rộng PCIe đỉnh cao cho studio và trung tâm dữ
+                                liệu.</p>
+                            <span class="block text-sm font-semibold text-zinc-900">Từ 179.999.000đ</span>
+                        </div>
+                        <div class="pt-8">
+                            <a href="#"
+                                class="block text-center w-full py-2 bg-zinc-100 hover:bg-zinc-200 text-xs font-semibold rounded-full text-zinc-900 transition">
+                                Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 7. Footer chuẩn Nike 4 Cột -->
+    <footer class="w-full bg-white text-zinc-900 border-t border-zinc-200">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+            <div class=" grid grid-cols-1 md:grid-cols-5 gap-8 pb-16">
+                <!-- Cột 1-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Shop and Learn</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Store</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Mac</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">iPad</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">iPhone</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Watch</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">AirPods</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Support</a></li>
+                    </ul>
+                </div>
+                <!-- Cột 2-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Entertainment</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple One</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple TV</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Music</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Arcade</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Fitness</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple News</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple TV</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Podcasts</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Books</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">App Store</a></li>
+                    </ul>
+                </div>
+                <!-- Cột 3-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Apple Store</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Find a Store</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Today at Apple</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Camp</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Store App</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Financing</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Order Status</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Shopping Help</a></li>
+                    </ul>
+                </div>
+                <!-- Cột 4-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">Apple Values</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Accessibility</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Education</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Environment</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Inclusion and
+                                Diversity</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Privacy</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Racial Equality and
+                                Justice</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Supply Chain
+                                Innovation</a></li>
+                    </ul>
+                </div>
+                <!-- Cột 5-->
+                <div class="space-y-3">
+                    <h4 class="text-xs text-zinc-500 uppercase tracking-wider font-bold">About Apple</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Newsroom</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Apple Leadership</a>
+                        </li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Investors</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Corporate
+                                Responsibility</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-zinc-900/80 transition">Contact Apple</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
